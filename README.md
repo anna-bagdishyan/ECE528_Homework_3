@@ -6,14 +6,17 @@
    - UCAxMCTLW (Modulation Control Word)
    - UCAxCTLW0 (Control Word 0)
    - UCAxRXBUF (Receive Buffer)
-   - UCAxTXBUF (Transmit Buffer)  
-   fdgfdgdg
+   - UCAxTXBUF (Transmit Buffer)
+       
+   The UCAxBRW register is used to set the baud rate. The UCAxMCTLW register is used to configure the baud rate modulation. The UCAxCTLW0 register can be used to select parity, direction of the shift register, and to select a clock source. The UCAxRXBUF and UCATXBUF registers are used to handle the incoming and outgoing bytes in UART communication. 
    
 2. **What is the purpose of the UCAxSTATW status register in the UART module? Which bits indicate the following?**
    - Whether the UART module is currently transmitting
    - Whether a framing, parity, or overrun error has occurred
-   - Whether the RX buffer contains unread data  
-     fsdfds
+   - Whether the RX buffer contains unread data
+     
+     The UCAxSTATW register is used to read the status of the UART module. Bit 0 indicates whether the UART module is currently transmitting, bits 6 to 4 indicate framing, parity, or overrun errors, and bit 3 shows whether the RX buffer contains unread data.
+     
 3. **(a) Assume that the eUSCI_A3 module is using SMCLK as its clock source, which has a frequency of 12 MHz. Calculate the value that is needed to be written to the UCAxBRW register to configure the eUSCI_A3 module for 115200 baud.**
 4. **Write a function named UART2_Init that configures the eUSCI_A2 module for the following settings:**
    - Baud Rate: 115200
