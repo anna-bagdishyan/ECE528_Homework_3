@@ -28,7 +28,9 @@
    - Bit Order Most Significant Bit (MSB) First
    - Clock Source: SMCLK (12 MHz)
    - Pins: P3.2 (UCA2TXD) and P3.3 (UCA2RXD)
-
+   ```c
+   P3->SEL0 = ;
+   ```
    **(b) Suppose that you have a main program that is transmitting data using the eUSCI_A2 module given the configuration in part (a). Draw the waveform for the UART
    TX data line if the main program is transmitting two bytes: 0xF1 followed by 0x55. Clearly label the start bits, data bits, and stop bits. Assume that there is a
    50 ms delay between the two bytes.**  
