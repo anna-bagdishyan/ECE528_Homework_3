@@ -17,8 +17,10 @@
      
      The UCAxSTATW register is used to read the status of the UART module. Bit 0 indicates whether the UART module is currently transmitting, bits 6 to 4 indicate framing, parity, or overrun errors, and bit 3 shows whether the RX buffer contains unread data.
      
-3. **(a) Assume that the eUSCI_A3 module is using SMCLK as its clock source, which has a frequency of 12 MHz. Calculate the value that is needed to be written to the UCAxBRW register to configure the eUSCI_A3 module for 115200 baud.**
-4. **Write a function named UART2_Init that configures the eUSCI_A2 module for the following settings:**
+3. **(a) Assume that the eUSCI_A3 module is using SMCLK as its clock source, which has a frequency of 12 MHz. Calculate the value that is needed to be written to the UCAxBRW register to configure the eUSCI_A3 module for 115200 baud.**  
+   N = 12 MHz / 115200 = 104.167  
+   
+5. **Write a function named UART2_Init that configures the eUSCI_A2 module for the following settings:**
    - Baud Rate: 115200
    - Data Length: 8 bits
    - Parity: None
@@ -31,12 +33,12 @@
    TX data line if the main program is transmitting two bytes: 0xF1 followed by 0x55. Clearly label the start bits, data bits, and stop bits. Assume that there is a
    50 ms delay between the two bytes.**  
    gfgdfgd
-5. **What is the function of the eUSCI_B module? How does SPI communication differ from UART communication in terms of:**
+6. **What is the function of the eUSCI_B module? How does SPI communication differ from UART communication in terms of:**
    - Synchronization
    - Clocking
    - Signaling
    - Data Framing
-6. **(a) Explain the role of the following SPI signals:**
+7. **(a) Explain the role of the following SPI signals:**
    - SCLK
    - CS
    - MISO
