@@ -6,13 +6,13 @@
    - UCAxMCTLW (Modulation Control Word)
    - UCAxCTLW0 (Control Word 0)
    - UCAxRXBUF (Receive Buffer)
-   - UCAxTXBUF (Transmit Buffer)
+   - UCAxTXBUF (Transmit Buffer)  
    fdgfdgdg
    
 2. **What is the purpose of the UCAxSTATW status register in the UART module? Which bits indicate the following?**
    - Whether the UART module is currently transmitting
    - Whether a framing, parity, or overrun error has occurred
-   - Whether the RX buffer contains unread data
+   - Whether the RX buffer contains unread data  
      fsdfds
 3. **(a) Assume that the eUSCI_A3 module is using SMCLK as its clock source, which has a frequency of 12 MHz. Calculate the value that is needed to be written to the UCAxBRW register to configure the eUSCI_A3 module for 115200 baud.**
 4. **Write a function named UART2_Init that configures the eUSCI_A2 module for the following settings:**
