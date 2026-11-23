@@ -42,7 +42,7 @@
    **(b) Suppose that you have a main program that is transmitting data using the eUSCI_A2 module given the configuration in part (a). Draw the waveform for the UART
    TX data line if the main program is transmitting two bytes: 0xF1 followed by 0x55. Clearly label the start bits, data bits, and stop bits. Assume that there is a
    50 ms delay between the two bytes.**  
-   
+   ![](https://github.com/anna-bagdishyan/ECE528_Homework_3/blob/main/Screenshot/UART.png)
 6. **What is the function of the eUSCI_B module? How does SPI communication differ from UART communication in terms of:**
    - Synchronization
    - Clocking
@@ -104,4 +104,4 @@
     - Chip Select (Active Low)
     - SCLK
     - MOSI  
-      fgdfgd
+      ![](https://github.com/anna-bagdishyan/ECE528_Homework_3/blob/main/Screenshot/Spi.png)
